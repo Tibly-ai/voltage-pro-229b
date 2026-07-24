@@ -16,55 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style type="text/tailwindcss">
-@theme {
-  --color-brand-50: #eef0fb;
-  --color-brand-100: #d9dcf5;
-  --color-brand-200: #b3b8ec;
-  --color-brand-300: #8d94e2;
-  --color-brand-400: #6169d9;
-  --color-brand-500: #3b41c9;
-  --color-brand-600: #130f7d;
-  --color-brand-700: #100c6a;
-  --color-brand-800: #0c0950;
-  --color-brand-900: #08063a;
-
-  --color-accent-50: #fffde8;
-  --color-accent-100: #fffbc2;
-  --color-accent-200: #fff88a;
-  --color-accent-300: #fff54d;
-  --color-accent-400: #ffff1a;
-  --color-accent-500: #ffff00;
-  --color-accent-600: #e6e600;
-  --color-accent-700: #b3b300;
-  --color-accent-800: #808000;
-  --color-accent-900: #4d4d00;
-
-  --color-surface: #000000;
-  --color-ink: #000000;
-  --color-neutral: #cccccc;
-
-  --font-display: 'Italiana', serif;
-  --font-body: 'Cabin', sans-serif;
-
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-}
-
-@layer components {
-  .btn {
-    @apply inline-block rounded-md bg-accent-500 px-6 py-3 font-body font-semibold text-black transition hover:bg-accent-600;
-  }
-  .btn-secondary {
-    @apply inline-block rounded-md border-2 border-white px-6 py-3 font-body font-semibold text-white transition hover:bg-white hover:text-black;
-  }
-  .card {
-    @apply rounded-md border border-neutral bg-white p-6;
-  }
-}
-</style>
+<link rel="stylesheet" href="/styles.css?v=ea934b4c">
 </head>
 <body>
 <!-- block:header -->
@@ -94,28 +46,6 @@
   </nav>
 </header>
 <!-- /block:header -->
-<!-- block:value-hero-cta -->
-<section class="bg-white text-ink font-body" data-block="value-hero-cta">
-  <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
-    <div>
-      <p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-neutral">Licensed Electrical Contractors</p>
-      <h1 class="mt-4 font-display text-4xl leading-tight sm:text-5xl md:text-6xl">
-        Electrical work fit for the homes and buildings that expect more.
-      </h1>
-      <img src="https://placehold.co/900x700?text=Electrical+Panel+Install" alt="Electrician completing a custom panel installation in a high-end residence" class="h-full w-full object-cover"><p class="mt-6 max-w-xl text-base text-black/70 sm:text-lg">
-        <span data-tibly-field="business-name">Voltage Pro Electrical</span> handles the wiring, panels, and lighting behind the region's finest custom homes, renovations, and commercial builds — with the precision the finish work deserves.
-      </p>
-      <div class="mt-8 flex flex-wrap gap-4">
-        <a href="/contact" class="btn">Request a Quote</a>
-        <a href="/projects" class="btn-secondary border-black text-black hover:bg-black hover:text-white">View Our Work</a>
-      </div>
-    </div>
-    <div class="overflow-hidden rounded-md border border-neutral">
-      <img src="https://placehold.co/900x700?text=Electrical+Panel+Install" alt="Electrician completing a custom panel installation in a high-end residence" class="h-full w-full object-cover">
-    </div>
-  </div>
-</section>
-<!-- /block:value-hero-cta -->
 <!-- block:trust-bar -->
 <section class="bg-surface text-white font-body" data-block="trust-bar">
   <div class="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 py-10 text-center sm:grid-cols-4">
@@ -138,6 +68,28 @@
   </div>
 </section>
 <!-- /block:trust-bar -->
+<!-- block:value-hero-cta -->
+<section class="bg-white text-ink font-body" data-block="value-hero-cta">
+  <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24">
+    <div>
+      <p class="font-body text-sm font-semibold uppercase tracking-[0.2em] text-neutral">Licensed Electrical Contractors</p>
+      <h1 class="mt-4 font-display text-4xl leading-tight sm:text-5xl md:text-6xl">
+        Electrical work fit for the homes and buildings that expect more.
+      </h1>
+      <img src="https://placehold.co/900x700?text=Electrical+Panel+Install" alt="Electrician completing a custom panel installation in a high-end residence" class="h-full w-full object-cover"><p class="mt-6 max-w-xl text-base text-black/70 sm:text-lg">
+        <span data-tibly-field="business-name">Voltage Pro Electrical</span> handles the wiring, panels, and lighting behind the region's finest custom homes, renovations, and commercial builds — with the precision the finish work deserves.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="/contact" class="btn">Request a Quote</a>
+        <a href="/projects" class="btn-secondary border-black text-black hover:bg-black hover:text-white">View Our Work</a>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded-md border border-neutral">
+      <img src="https://placehold.co/900x700?text=Electrical+Panel+Install" alt="Electrician completing a custom panel installation in a high-end residence" class="h-full w-full object-cover">
+    </div>
+  </div>
+</section>
+<!-- /block:value-hero-cta -->
 <!-- block:service-grid -->
 <section class="bg-white text-ink font-body" data-block="service-grid">
   <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
